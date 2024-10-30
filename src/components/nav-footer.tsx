@@ -7,7 +7,7 @@ export default function NavFooter() {
           <p className="hover:underline">keanteng</p>
           <p className="hover:underline">Build With NextJS & Flask Backend</p>
           <p className="hover:underline">
-            <Link href="abc.com">
+            <Link href="https://github.com/keanteng/nextjs-flask-demo">
               source
             </Link>
           </p>
