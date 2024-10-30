@@ -1,0 +1,64 @@
+// 'use client';
+
+// import { useState } from 'react';
+
+// export default function Test() {
+//   const [formData, setFormData] = useState({
+//     HomePlanet: '',
+//     CryoSleep: '',
+//     Destination: '',
+//     Age: '',
+//     VIP: '',
+//     RoomService: '',
+//     FoodCourt: '',
+//     ShoppingMall: '',
+//     Spa: '',
+//     VRDeck: ''
+//   });
+
+//   const [prediction, setPrediction] = useState(null);
+
+//   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value
+//     });
+//   };
+
+//   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+//     e.preventDefault();
+//     const response = await fetch('http://127.0.0.1:5000/predict', {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json'
+//       },
+//       body: JSON.stringify(formData)
+//     });
+//     const data = await response.json();
+//     setPrediction(data.Transported);
+//   };
+
+//   return (
+//     <div>
+//       <h1>Spaceship Titanic Prediction</h1>
+//       <form onSubmit={handleSubmit}>
+//         <input name="HomePlanet" placeholder="HomePlanet" onChange={handleChange} />
+//         <input name="CryoSleep" placeholder="CryoSleep" onChange={handleChange} />
+//         <input name="Destination" placeholder="Destination" onChange={handleChange} />
+//         <input name="Age" placeholder="Age" onChange={handleChange} />
+//         <input name="VIP" placeholder="VIP" onChange={handleChange} />
+//         <input name="RoomService" placeholder="RoomService" onChange={handleChange} />
+//         <input name="FoodCourt" placeholder="FoodCourt" onChange={handleChange} />
+//         <input name="ShoppingMall" placeholder="ShoppingMall" onChange={handleChange} />
+//         <input name="Spa" placeholder="Spa" onChange={handleChange} />
+//         <input name="VRDeck" placeholder="VRDeck" onChange={handleChange} />
+//         <button type="submit">Predict</button>
+//       </form>
+//       {prediction !== null && (
+//         <div>
+//           <h2>Prediction: {prediction ? 'Transported' : 'Not Transported'}</h2>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }

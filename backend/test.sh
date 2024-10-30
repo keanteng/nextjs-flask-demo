@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"HomePlanet": "Moon", "CryoSleep": "Yes", "Destination": "Demon", "Age": 27, "VIP": "No", "RoomService": 230, "FoodCourt": 23, "ShoppingMall": 40, "Spa": 20, "VRDeck": 40}' http://127.0.0.1:5000/predict
